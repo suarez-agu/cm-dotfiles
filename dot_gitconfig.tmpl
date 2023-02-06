@@ -1,3 +1,6 @@
+[user]
+	email = {{ .email | quote }}
+	name = {{ .full_name | quote }}
 [difftool "diffmerge"]
 	cmd = diffmerge $LOCAL $REMOTE
 [alias]
